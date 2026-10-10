@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2d29" />
+      <stop offset="100%" stop-color="#141d1a" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#d9f06a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with lime border -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bgGrad)" stroke="#d9f06a" stroke-width="2.5" />
+
+  <!-- Active indicator status dot -->
+  <circle cx="51" cy="13" r="3.5" fill="#d9f06a" filter="url(#glow)" />
+
+  <!-- Monogram MB -->
+  <text 
+    x="31" 
+    y="43" 
+    fill="#d9f06a" 
+    font-family="'Manrope', 'Segoe UI', -apple-system, sans-serif" 
+    font-size="27" 
+    font-weight="800" 
+    letter-spacing="-1.2px" 
+    text-anchor="middle">MB</text>
+</svg>
